@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'taggit',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -106,3 +107,11 @@ LANGUAGES = (
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+EMAIL_HOST = 'smtp.163.com'  # stmp 地址
+EMAIL_HOST_USER = '15001738114@163.com'  # 用户
+EMAIL_HOST_PASSWORD = '1234yanghuan'
+EMAIL_PORT = 25
+EMAIL_SUBJECT_PREFIX = 'Best!'
+EMALI_USE_TLS = True  # 与SMTP服务器通信时,是否启动TLS链接(安全链接), 默认是Fasle.
